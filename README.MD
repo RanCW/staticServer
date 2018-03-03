@@ -395,8 +395,10 @@ module.exports = Server;
           }
     ```
     这里是主要是将rcw-staticserver这个字段设置到系统PATH当中去，然后记得一定要运行一次npm link，从而将命令执行内容路径改到，bin/app文件来。那么我这里就能通过在命令行输入rcw-staticserver来启动我的静态文件服务器了。那么bin文件夹下的app文件代码内容如下：
+
     ```javascript
-        #! /usr/bin/env node     这段代码一定要写在开头，为了兼容各个电脑平台的差异性
+
+        #! /usr/bin/env node     //这段代码一定要写在开头，为了兼容各个电脑平台的差异性
         const yargs = require('yargs');//yargs模块，主要是用它提供的argv对象，用来读取命令行参数
         let Server = require('../src/appCache.js');
         const child = require('child_process');
