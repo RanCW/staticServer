@@ -28,7 +28,4 @@ let argv = yargs.option('d', {
         'rcw-staticserver -d / -p 9898 -o localhost', '在本机的9898端口上监听客户端的请求'
     ).help('h').argv;
 
-// argv = {d,root,o,host,p,port}
 let server = new Server(argv).start();
-//zf-server2
-//命令行中的命令指向了npm目录bat文件，而 bat文件又指向了当前目录 的www文件

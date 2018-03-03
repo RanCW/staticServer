@@ -12,7 +12,6 @@ let handlebars = require('handlebars');
 const config = require('./config')
 const stat = promisify(fs.stat)
 const readDir = promisify(fs.readdir)
-
 //获取编译模板
 function getTemplet() {
     let tmpl = fs.readFileSync(path.resolve(__dirname, 'template', 'list.html'), 'utf8');
