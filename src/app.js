@@ -19,9 +19,9 @@ function getTemplet() {
     return handlebars.compile(tmpl);
 }
 class Server {
-    constructor() {
-        this.config = config;
-        this.list = getTemplet()
+    constructor(argv) {
+        this.config = Object.assign({}, config, argv);
+        this.list = getTemplet();
     }
     //启动服务
     start() {
