@@ -432,8 +432,8 @@ module.exports = Server;
     ```
     这样子的话我就能在命令行当中通过输入rcw-staticserver来直接启动静态文件服务器了，那么命令行调用的功能也就实现了。
 
- ### 功能实现——代码发布到npm，可通过npm install -g全局安装。
-    这个功能其实相对来说就很简单了，首先要有个[npm](https://www.npmjs.com/)官网的账号，没有的请自觉注册吧。命令行里通过npm login先登录自己的npm账号，然后再运行npm publish，这个包就很轻松的发布到npm上面去了，也就可以通过npm install -g来进行全局安装了。
+### 功能实现——代码发布到npm，可通过npm install -g全局安装。
+  这个功能其实相对来说就很简单了，首先要有个[npm](https://www.npmjs.com/)官网的账号，没有的请自觉注册吧。命令行里通过npm login先登录自己的npm账号，然后再运行npm publish，这个包就很轻松的发布到npm上面去了，也就可以通过npm install -g来进行全局安装了。
 
    通过以上的操作我们一个静态文件服务器就已经实现了哦！有不好和错误的地方，请大家多多指教。
 
